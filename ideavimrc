@@ -1,3 +1,26 @@
 let mapleader = ',' 
 
+set number
+set relativenumber
+set timeoutlen = 100
+
 inoremap jk <esc>
+
+" goto
+nnoremap ga :action GotoAction<cr>
+nnoremap gc :action GotoClass<cr>
+nnoremap gf :action GotoFile<cr>
+nnoremap gs :action GotoSymbol<cr>
+
+nnoremap gd :action GotoDeclaration<cr>
+nnoremap gi :action GotoImplementation<cr>
+
+" move
+" nnoremap j jzz
+" nnoremap k kzz
+nnoremap <c-j> <c-d>zz
+nnoremap <c-k> <c-u>zz
+
+" plugin acejump
+nnoremap <leader>aj :action AceAction<cr>
+
